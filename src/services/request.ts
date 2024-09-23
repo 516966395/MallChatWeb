@@ -35,7 +35,9 @@ export const alovaIns = createAlova({
   // 设置全局的请求拦截器，与axios相似
   beforeRequest({ config }) {
     // 假设我们需要添加token到请求头
-    config.headers.Authorization = `Bearer ${computedToken.get()}`
+    // config.headers.Authorization = `Bearer ${computedToken.get()}`
+    config.headers['X-Auth-Token'] = `Bearer ${computedToken.get()}`
+    // config.headers.Authorization = `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjEwMjc2LCJjcmVhdGVUaW1lIjoxNzI0ODM0NzMzfQ.GLdNPEZWj6J5z5JFC168iNkVRFcTov1WkQyM2zy2ErA`
 
     config.headers['Content-Type'] = 'application/json; charset=utf-8'
   },

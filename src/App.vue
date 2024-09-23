@@ -13,7 +13,7 @@ import 'element-plus/theme-chalk/dark/css-vars.css'
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .app-wrapper {
   width: 100vw;
   height: 100vh;
@@ -29,4 +29,4 @@ import 'element-plus/theme-chalk/dark/css-vars.css'
     background-image: url('@/assets/login_bg.webp');
   }
 }
-</style>
+</style> -->

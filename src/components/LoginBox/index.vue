@@ -28,8 +28,8 @@ watchEffect(() => {
 <template>
   <ElDialog class="login-box-modal" :width="376" v-model="visible" center>
     <div class="login-box">
-      <img class="login-logo" src="@/assets/logo.jpeg" alt="MallChat" />
-      <p class="login-slogan">边聊边买，岂不快哉~</p>
+      <!-- <img class="login-logo" src="@/assets/logo.jpeg" alt="MallChat" /> -->
+      <p class="login-slogan">客官，欢迎光临!~</p>
       <div class="login-qrcode-wrapper" v-loading="!loginQrCode">
         <QrCode
           class="login-qrcode"

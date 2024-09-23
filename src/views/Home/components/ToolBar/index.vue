@@ -88,7 +88,7 @@ const menuList = [
         </el-badge>
       </router-link>
     </div>
-    <div class="menu">
+    <!-- <div class="menu">
       <el-tooltip effect="dark" :placement="isPc ? 'right' : 'bottom'">
         <template #content>
           <img class="icon-wechat-qrcode" :src="qrcode" alt="wx qrcode" />
@@ -105,7 +105,7 @@ const menuList = [
         <Icon :icon="item.icon" :size="28" colorful />
         <span v-if="item.name" class="menu-item-name">{{ item.name }}</span>
       </a>
-    </div>
+    </div> -->
     <Icon icon="zhankai" :size="28" @click="toggleGroupListShow" />
     <UserSettingBox v-model="visible" />
   </aside>
